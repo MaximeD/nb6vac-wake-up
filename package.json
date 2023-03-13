@@ -1,0 +1,14 @@
+{
+  "name": "nb6vac-wake-up",
+  "version": "1.0.0",
+  "description": "Wake up nb6vac box",
+  "main": "index.js",
+  "scripts": {
+    "wake-up": "node index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^19.7.4"
+  },
+  "type": "module"
+}
