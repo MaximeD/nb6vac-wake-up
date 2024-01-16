@@ -4,7 +4,10 @@ import puppeteer from 'puppeteer';
 const ROUTER_IP = 'http://192.168.1.1';
 
 (async () => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    executablePath: '/usr/bin/chromium-browser',
+    args: ['--no-sandbox', '--disable-dev-shm-usage']
+  });
   const page = await browser.newPage();
 
   // Go to eco page
